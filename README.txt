@@ -6,8 +6,11 @@ provides the complete solution for the previous step.
 Following tutorial from this link below:
 https://cmake.org/cmake/help/latest/guide/tutorial/index.html
 
-**Notes to Self**
+** Notes to Self  **
 
 In big projects, its good to separate source and build directories. 
-Source directories contain all of the source code, such as .cpp and .h files, that are needed to generate the build system.
-Build directories keeps the compiled files and temporary build artifacts separate from the source directory, making it easier to clean, rebuild, and support multiple build configurations 
+- Source directories contain all of the source code, such as .cpp and .h files, that are needed to generate the build system.
+- Build directories keeps the compiled files and temporary build artifacts separate from the source directory, making it easier to clean, rebuild, and support multiple build configurations 
+
+Running this command will reset my build directory and ensure cmake is using gcc-14 and g++-14 as my compilers:
+cmake .. -DCMAKE_C_COMPILER=gcc-14 -DCMAKE_CXX_COMPILER=g++-14
